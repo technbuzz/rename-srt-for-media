@@ -7,9 +7,16 @@ const isFile = fileName => {
   return fs.lstatSync(fileName).isFile()
 }
 
+const isSrt = fileName => {
+  return (path.extname(fileName) === '.srt')
+}
+
 const list = fs.readdirSync(folderPath).map(item => {
 
   return path.join(folderPath, item)
-}).filter(isFile)
+})
+.filter(isFile)
+.filter(isSrt)
+
 
 console.log(list);
