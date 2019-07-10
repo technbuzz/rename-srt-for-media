@@ -1,0 +1,25 @@
+{
+  "name": "rename-srt-for-media",
+  "version": "1.0.0",
+  "description": "Renames srt based on media",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technbuzz/rename-srt-for-media.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "samiullah Khan (samiullah.khan.1989@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/technbuzz/rename-srt-for-media/issues"
+  },
+  "homepage": "https://github.com/technbuzz/rename-srt-for-media#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
