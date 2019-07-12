@@ -26,9 +26,11 @@ const isSrt = fileName => {
   return path.extname(fileName) === '.srt';
 };
 
+let list = [];
+
 app.post('/files', (req, res) => {
   const { folderName } = req.body;
-  const list = fs
+  list = fs
     .readdirSync(folderPath)
     .map(item => {
       return path.join(folderPath, item);
@@ -38,6 +40,12 @@ app.post('/files', (req, res) => {
 
   res.json(list);
 });
+
+app.post('/rename', (req, res) => {
+  
+})
+
+
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
